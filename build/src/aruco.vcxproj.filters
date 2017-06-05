@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Mato\Fixer\cuda_aruco\src\ar_omp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mato\Fixer\cuda_aruco\src\board.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mato\Fixer\cuda_aruco\src\boarddetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mato\Fixer\cuda_aruco\src\subpixelcorner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\ar_omp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\aruco.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\board.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\boarddetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\cudaImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\cuda_aruco.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\cudautils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\exports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\marker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mato\Fixer\cuda_aruco\src\subpixelcorner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Mato\Fixer\cuda_aruco\src\cudaImage.cu" />
+    <CustomBuild Include="C:\Users\Mato\Fixer\cuda_aruco\src\cuda_aruco.cu" />
+    <CustomBuild Include="C:\Users\Mato\Fixer\cuda_aruco\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F28C7481-A2C4-37E4-9A3F-3999754BBE34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B1E62692-0BB5-353D-8EBD-1CCD1704C41A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+# CMake generation dependency list for this directory.
+C:/Users/Mato/Fixer/cuda_aruco/src/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.8/Modules/FindCUDA.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/FindCUDA/select_compute_arch.cmake
+C:/Users/Mato/Fixer/cuda_aruco/build/src/CMakeFiles/cuda_aruco.dir/cuda_aruco_generated_cuda_aruco.cu.obj.depend
+C:/Program Files/CMake/share/cmake-3.8/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Mato/Fixer/cuda_aruco/build/src/CMakeFiles/cuda_aruco.dir/cuda_aruco_generated_cudaImage.cu.obj.depend
+C:/Program Files/CMake/share/cmake-3.8/Modules/FindCUDA/run_nvcc.cmake
+C:/Users/Mato/Fixer/cuda_aruco/build/src/CMakeFiles/cuda_aruco.dir//cuda_aruco_generated_cuda_aruco.cu.obj.cmake.pre-gen
+C:/Users/Mato/Fixer/cuda_aruco/build/src/CMakeFiles/cuda_aruco.dir//cuda_aruco_generated_cudaImage.cu.obj.cmake.pre-gen

@@ -1,0 +1,10 @@
+
+libdir=C:/Users/Mato/Fixer/cuda_aruco/build
+includedir=C:/Users/Mato/Fixer/cuda_aruco/src
+
+Name: aruco
+Description: ArUco: a minimal library for Augmented Reality applications based on OpenCv, uninstalled Version.
+Version: 1.3.0
+Requires: opencv >= 2.1.0
+Libs: -L${libdir} -laruco
+Cflags: -I${includedir}

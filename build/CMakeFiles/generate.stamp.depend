@@ -1,0 +1,34 @@
+# CMake generation dependency list for this directory.
+C:/Users/Mato/Fixer/cuda_aruco/CMakeLists.txt
+C:/Users/Mato/Fixer/cuda_aruco/build/CMakeFiles/3.8.1/CMakeSystem.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Users/Mato/Fixer/cuda_aruco/build/CMakeFiles/3.8.1/CMakeCCompiler.cmake
+C:/Users/Mato/Fixer/cuda_aruco/build/CMakeFiles/3.8.1/CMakeCXXCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/Windows-MSVC.cmake
+C:/Users/Mato/Fixer/cuda_aruco/build/CMakeFiles/3.8.1/CMakeRCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake
+C:/Intel/INDE/OpenCV_3.1_build_x64/OpenCVConfig-version.cmake
+C:/Intel/INDE/OpenCV_3.1_build_x64/OpenCVConfig.cmake
+C:/Intel/INDE/OpenCV_3.1_build_x64/OpenCVModules.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/FindCUDA.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.8/Modules/FindCUDA/select_compute_arch.cmake
+C:/Users/Mato/Fixer/cuda_aruco/cmake_uninstall.cmake.in
+C:/Users/Mato/Fixer/cuda_aruco/config.cmake.in
+C:/Users/Mato/Fixer/cuda_aruco/aruco.pc.in
+C:/Users/Mato/Fixer/cuda_aruco/aruco-uninstalled.pc.in

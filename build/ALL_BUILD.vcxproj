@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{710E7297-CCFE-38A3-9D19-E15EFED55F96}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Mato\Fixer\cuda_aruco\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Mato/Fixer/cuda_aruco/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/Mato/Fixer/cuda_aruco -BC:/Users/Mato/Fixer/cuda_aruco/build --check-stamp-file C:/Users/Mato/Fixer/cuda_aruco/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Mato/Fixer/cuda_aruco/CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeCCompiler.cmake;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Intel\INDE\OpenCV_3.1_build_x64\OpenCVConfig-version.cmake;C:\Intel\INDE\OpenCV_3.1_build_x64\OpenCVConfig.cmake;C:\Intel\INDE\OpenCV_3.1_build_x64\OpenCVModules.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindCUDA\select_compute_arch.cmake;C:\Users\Mato\Fixer\cuda_aruco\cmake_uninstall.cmake.in;C:\Users\Mato\Fixer\cuda_aruco\config.cmake.in;C:\Users\Mato\Fixer\cuda_aruco\aruco.pc.in;C:\Users\Mato\Fixer\cuda_aruco\aruco-uninstalled.pc.in;C:\Users\Mato\Fixer\cuda_aruco\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Mato/Fixer/cuda_aruco/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/Mato/Fixer/cuda_aruco -BC:/Users/Mato/Fixer/cuda_aruco/build --check-stamp-file C:/Users/Mato/Fixer/cuda_aruco/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Mato/Fixer/cuda_aruco/CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeCCompiler.cmake;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Intel\INDE\OpenCV_3.1_build_x64\OpenCVConfig-version.cmake;C:\Intel\INDE\OpenCV_3.1_build_x64\OpenCVConfig.cmake;C:\Intel\INDE\OpenCV_3.1_build_x64\OpenCVModules.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindCUDA\select_compute_arch.cmake;C:\Users\Mato\Fixer\cuda_aruco\cmake_uninstall.cmake.in;C:\Users\Mato\Fixer\cuda_aruco\config.cmake.in;C:\Users\Mato\Fixer\cuda_aruco\aruco.pc.in;C:\Users\Mato\Fixer\cuda_aruco\aruco-uninstalled.pc.in;C:\Users\Mato\Fixer\cuda_aruco\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Mato/Fixer/cuda_aruco/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/Mato/Fixer/cuda_aruco -BC:/Users/Mato/Fixer/cuda_aruco/build --check-stamp-file C:/Users/Mato/Fixer/cuda_aruco/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Mato/Fixer/cuda_aruco/CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeCCompiler.cmake;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Intel\INDE\OpenCV_3.1_build_x64\OpenCVConfig-version.cmake;C:\Intel\INDE\OpenCV_3.1_build_x64\OpenCVConfig.cmake;C:\Intel\INDE\OpenCV_3.1_build_x64\OpenCVModules.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindCUDA\select_compute_arch.cmake;C:\Users\Mato\Fixer\cuda_aruco\cmake_uninstall.cmake.in;C:\Users\Mato\Fixer\cuda_aruco\config.cmake.in;C:\Users\Mato\Fixer\cuda_aruco\aruco.pc.in;C:\Users\Mato\Fixer\cuda_aruco\aruco-uninstalled.pc.in;C:\Users\Mato\Fixer\cuda_aruco\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Mato/Fixer/cuda_aruco/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/Mato/Fixer/cuda_aruco -BC:/Users/Mato/Fixer/cuda_aruco/build --check-stamp-file C:/Users/Mato/Fixer/cuda_aruco/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Mato/Fixer/cuda_aruco/CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeCCompiler.cmake;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\3.8.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Intel\INDE\OpenCV_3.1_build_x64\OpenCVConfig-version.cmake;C:\Intel\INDE\OpenCV_3.1_build_x64\OpenCVConfig.cmake;C:\Intel\INDE\OpenCV_3.1_build_x64\OpenCVModules.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindCUDA\select_compute_arch.cmake;C:\Users\Mato\Fixer\cuda_aruco\cmake_uninstall.cmake.in;C:\Users\Mato\Fixer\cuda_aruco\config.cmake.in;C:\Users\Mato\Fixer\cuda_aruco\aruco.pc.in;C:\Users\Mato\Fixer\cuda_aruco\aruco-uninstalled.pc.in;C:\Users\Mato\Fixer\cuda_aruco\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Mato\Fixer\cuda_aruco\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\ZERO_CHECK.vcxproj">
+      <Project>{AE049052-F1F0-348F-A5F3-DB666075B475}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\src\aruco.vcxproj">
+      <Project>{C8B8FDBF-686E-342A-A2F2-7C9F8188E101}</Project>
+      <Name>aruco</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\utils\aruco_board_pix2meters.vcxproj">
+      <Project>{44A203BF-9E60-326B-8001-E0B508843609}</Project>
+      <Name>aruco_board_pix2meters</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\utils\aruco_calibration.vcxproj">
+      <Project>{EFE8EE05-49B3-300E-8307-7D646E7EA7D8}</Project>
+      <Name>aruco_calibration</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\utils\aruco_create_board.vcxproj">
+      <Project>{2835CE8F-127C-312D-87F5-F6C80CEEAE3D}</Project>
+      <Name>aruco_create_board</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\utils\aruco_create_marker.vcxproj">
+      <Project>{E2DDECA2-83DF-33C1-89FF-37405946C791}</Project>
+      <Name>aruco_create_marker</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\utils_hrm\aruco_hrm_create_board.vcxproj">
+      <Project>{484059C8-43C5-3FEB-B903-CB836E89623B}</Project>
+      <Name>aruco_hrm_create_board</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\utils_hrm\aruco_hrm_create_dictionary.vcxproj">
+      <Project>{61B4E6BA-9C63-3425-BC1E-57C33844B03F}</Project>
+      <Name>aruco_hrm_create_dictionary</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\utils_hrm\aruco_hrm_test.vcxproj">
+      <Project>{15A9EBD7-CCD7-30FB-9880-E2B594C9F24F}</Project>
+      <Name>aruco_hrm_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\utils_hrm\aruco_hrm_test_board.vcxproj">
+      <Project>{04C33A81-BF27-3880-B8CE-FFB1119F24D2}</Project>
+      <Name>aruco_hrm_test_board</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\utils\aruco_selectoptimalmarkers.vcxproj">
+      <Project>{98BACEED-822D-3408-B84B-BB334EF07CDD}</Project>
+      <Name>aruco_selectoptimalmarkers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\utils\aruco_simple.vcxproj">
+      <Project>{3E56E311-73FB-328B-A56F-011A7036DFB5}</Project>
+      <Name>aruco_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\utils\aruco_simple_board.vcxproj">
+      <Project>{694CC04C-7773-34DA-9C7F-663C84D29D7F}</Project>
+      <Name>aruco_simple_board</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\utils\aruco_test.vcxproj">
+      <Project>{AE7565D0-AE84-3564-BCB4-355865308D31}</Project>
+      <Name>aruco_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\utils\aruco_test_board.vcxproj">
+      <Project>{9D082FCA-04E4-314D-8961-BB2371EDC040}</Project>
+      <Name>aruco_test_board</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\src\cuda_aruco.vcxproj">
+      <Project>{F1497CE6-9FE7-38B2-A1F1-67F4C64903B9}</Project>
+      <Name>cuda_aruco</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

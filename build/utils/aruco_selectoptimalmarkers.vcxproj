@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{98BACEED-822D-3408-B84B-BB334EF07CDD}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>aruco_selectoptimalmarkers</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Mato\Fixer\cuda_aruco\build\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aruco_selectoptimalmarkers.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aruco_selectoptimalmarkers</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Mato\Fixer\cuda_aruco\build\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aruco_selectoptimalmarkers.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aruco_selectoptimalmarkers</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Mato\Fixer\cuda_aruco\build\bin\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aruco_selectoptimalmarkers.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aruco_selectoptimalmarkers</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Mato\Fixer\cuda_aruco\build\bin\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aruco_selectoptimalmarkers.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aruco_selectoptimalmarkers</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;C:\Users\Mato\Fixer\cuda_aruco\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;OPENCV_VERSION_3;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;OPENCV_VERSION_3;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;C:\Users\Mato\Fixer\cuda_aruco\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;C:\Users\Mato\Fixer\cuda_aruco\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\bin\Debug\aruco130.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_videostab310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_superres310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_stitching310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_shape310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_photo310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudastereo310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudaoptflow310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudaobjdetect310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudalegacy310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudaimgproc310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudafeatures2d310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudacodec310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudabgsegm310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_calib3d310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_objdetect310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudawarping310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudafilters310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_video310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudaarithm310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_features2d310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_ml310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_highgui310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_videoio310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_imgcodecs310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_imgproc310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_flann310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_core310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudev310d.lib;..\bin\Debug\cuda_aruco.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\cudart_static.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\cudadevrt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Mato/Fixer/cuda_aruco/build/bin/Debug/aruco_selectoptimalmarkers.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Mato/Fixer/cuda_aruco/build/bin/Debug/aruco_selectoptimalmarkers.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;C:\Users\Mato\Fixer\cuda_aruco\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENCV_VERSION_3;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENCV_VERSION_3;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;C:\Users\Mato\Fixer\cuda_aruco\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;C:\Users\Mato\Fixer\cuda_aruco\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\bin\Release\aruco130.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_videostab310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_superres310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_stitching310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_shape310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_photo310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudastereo310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudaoptflow310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudaobjdetect310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudalegacy310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudaimgproc310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudafeatures2d310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudacodec310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudabgsegm310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_calib3d310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_objdetect310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudawarping310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudafilters310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_video310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudaarithm310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_features2d310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_ml310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_highgui310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_videoio310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_imgcodecs310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_imgproc310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_flann310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_core310.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudev310.lib;..\bin\Release\cuda_aruco.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\cudart_static.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\cudadevrt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Mato/Fixer/cuda_aruco/build/bin/Release/aruco_selectoptimalmarkers.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Mato/Fixer/cuda_aruco/build/bin/Release/aruco_selectoptimalmarkers.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;C:\Users\Mato\Fixer\cuda_aruco\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENCV_VERSION_3;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENCV_VERSION_3;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;C:\Users\Mato\Fixer\cuda_aruco\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;C:\Users\Mato\Fixer\cuda_aruco\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\bin\MinSizeRel\aruco130.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_videostab310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_superres310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_stitching310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_shape310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_photo310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudastereo310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudaoptflow310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudaobjdetect310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudalegacy310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudaimgproc310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudafeatures2d310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudacodec310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudabgsegm310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_calib3d310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_objdetect310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudawarping310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudafilters310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_video310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudaarithm310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_features2d310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_ml310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_highgui310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_videoio310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_imgcodecs310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_imgproc310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_flann310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_core310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudev310d.lib;..\bin\MinSizeRel\cuda_aruco.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\cudart_static.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\cudadevrt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Mato/Fixer/cuda_aruco/build/bin/MinSizeRel/aruco_selectoptimalmarkers.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Mato/Fixer/cuda_aruco/build/bin/MinSizeRel/aruco_selectoptimalmarkers.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;C:\Users\Mato\Fixer\cuda_aruco\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENCV_VERSION_3;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OPENCV_VERSION_3;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;C:\Users\Mato\Fixer\cuda_aruco\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Intel\INDE\OpenCV_3.1_build_x64;C:\Intel\INDE\OpenCV_3.1_src\include;C:\Intel\INDE\OpenCV_3.1_src\include\opencv;C:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include;C:\Intel\INDE\OpenCV_3.1_src\modules\hal\include;C:\Intel\INDE\OpenCV_3.1_src\modules\core\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\flann\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ml\include;C:\Intel\INDE\OpenCV_3.1_src\modules\video\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include;C:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include;C:\Intel\INDE\OpenCV_3.1_src\modules\photo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\shape\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include;C:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include;C:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\ts\include;C:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include;C:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include;C:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include;C:\Intel\INDE\OpenCV_3.1_src\modules\superres\include;C:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include;C:\Users\Mato\Fixer\cuda_aruco\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\bin\RelWithDebInfo\aruco130.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_videostab310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_superres310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_stitching310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_shape310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_photo310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudastereo310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudaoptflow310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudaobjdetect310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudalegacy310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudaimgproc310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudafeatures2d310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudacodec310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudabgsegm310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_calib3d310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_objdetect310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudawarping310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudafilters310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_video310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudaarithm310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_features2d310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_ml310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_highgui310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_videoio310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_imgcodecs310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_imgproc310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_flann310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_core310d.lib;C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Debug\opencv_cudev310d.lib;..\bin\RelWithDebInfo\cuda_aruco.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\cudart_static.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\cudadevrt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Mato/Fixer/cuda_aruco/build/bin/RelWithDebInfo/aruco_selectoptimalmarkers.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Mato/Fixer/cuda_aruco/build/bin/RelWithDebInfo/aruco_selectoptimalmarkers.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Mato\Fixer\cuda_aruco\utils\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Mato/Fixer/cuda_aruco/utils/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/Mato/Fixer/cuda_aruco -BC:/Users/Mato/Fixer/cuda_aruco/build --check-stamp-file C:/Users/Mato/Fixer/cuda_aruco/build/utils/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Mato/Fixer/cuda_aruco/utils/CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\utils\CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\utils\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Mato\Fixer\cuda_aruco\build\utils\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Mato/Fixer/cuda_aruco/utils/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/Mato/Fixer/cuda_aruco -BC:/Users/Mato/Fixer/cuda_aruco/build --check-stamp-file C:/Users/Mato/Fixer/cuda_aruco/build/utils/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Mato/Fixer/cuda_aruco/utils/CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\utils\CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\utils\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Mato\Fixer\cuda_aruco\build\utils\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Mato/Fixer/cuda_aruco/utils/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/Mato/Fixer/cuda_aruco -BC:/Users/Mato/Fixer/cuda_aruco/build --check-stamp-file C:/Users/Mato/Fixer/cuda_aruco/build/utils/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Mato/Fixer/cuda_aruco/utils/CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\utils\CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\utils\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Mato\Fixer\cuda_aruco\build\utils\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Mato/Fixer/cuda_aruco/utils/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/Mato/Fixer/cuda_aruco -BC:/Users/Mato/Fixer/cuda_aruco/build --check-stamp-file C:/Users/Mato/Fixer/cuda_aruco/build/utils/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Mato/Fixer/cuda_aruco/utils/CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\utils\CMakeLists.txt;C:\Users\Mato\Fixer\cuda_aruco\utils\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Mato\Fixer\cuda_aruco\build\utils\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Mato\Fixer\cuda_aruco\utils\aruco_selectoptimalmarkers.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\ZERO_CHECK.vcxproj">
+      <Project>{AE049052-F1F0-348F-A5F3-DB666075B475}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\src\aruco.vcxproj">
+      <Project>{C8B8FDBF-686E-342A-A2F2-7C9F8188E101}</Project>
+      <Name>aruco</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Mato\Fixer\cuda_aruco\build\src\cuda_aruco.vcxproj">
+      <Project>{F1497CE6-9FE7-38B2-A1F1-67F4C64903B9}</Project>
+      <Name>cuda_aruco</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
