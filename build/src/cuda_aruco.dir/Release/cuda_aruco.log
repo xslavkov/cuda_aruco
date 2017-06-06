@@ -1,6 +1,22 @@
-﻿Build started 6.6.2017 17:43:43.
-     1>Project "c:\Users\Mato\Fixer\cuda_aruco\build\src\cuda_aruco.vcxproj" on node 2 (Build target(s)).
+﻿Build started 6.6.2017 22:00:33.
+     1>Project "c:\Users\Mato\Fixer\cuda_aruco\build\src\cuda_aruco.vcxproj" on node 2 (Rebuild target(s)).
      1>CustomBuild:
+         Building NVCC (Device) object src/CMakeFiles/cuda_aruco.dir/Release/cuda_aruco_generated_cuda_aruco.cu.obj
+         cuda_aruco.cu
+         cuda_aruco.cu
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(41): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(42): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(43): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(46): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(222): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(224): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(226): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(231): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+         Building NVCC (Device) object src/CMakeFiles/cuda_aruco.dir/Release/cuda_aruco_generated_cudaImage.cu.obj
+         cudaImage.cu
+         cudaImage.cu
+         Building Custom Rule C:/Users/Mato/Fixer/cuda_aruco/src/CMakeLists.txt
+         CMake does not need to re-run because C:/Users/Mato/Fixer/cuda_aruco/build/src/CMakeFiles/generate.stamp is up-to-date.
          Building NVCC intermediate link file src/CMakeFiles/cuda_aruco.dir/Release/cuda_aruco_intermediate_link.obj
          cuda_aruco_generated_cuda_aruco.cu.obj
          cuda_aruco_generated_cudaImage.cu.obj
@@ -10,8 +26,8 @@
          C:\Users\Mato\Fixer\cuda_aruco\build\src\CMakeFiles\cuda_aruco.dir\Release\cuda_aruco_intermediate_link.obj
             Creating library C:/Users/Mato/Fixer/cuda_aruco/build/bin/Release/cuda_aruco.lib and object C:/Users/Mato/Fixer/cuda_aruco/build/bin/Release/cuda_aruco.exp
          cuda_aruco.vcxproj -> C:\Users\Mato\Fixer\cuda_aruco\build\bin\Release\cuda_aruco.dll
-     1>Done Building Project "c:\Users\Mato\Fixer\cuda_aruco\build\src\cuda_aruco.vcxproj" (Build target(s)).
+     1>Done Building Project "c:\Users\Mato\Fixer\cuda_aruco\build\src\cuda_aruco.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.72
+Time Elapsed 00:00:14.22

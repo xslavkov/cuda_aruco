@@ -35,13 +35,14 @@ or implied, of Rafael Muñoz Salinas.
 using namespace cv;
 using namespace aruco;
 
-string TheInputVideo;
+string TheInputImagePath;
+string TheLogFilePath;
 string TheIntrinsicFile;
 string TheDictionaryFile;
+ofstream logFile;
 float TheMarkerSize = -1;
 int ThePyrDownLevel;
 MarkerDetector MDetector;
-VideoCapture TheVideoCapturer;
 vector< Marker > TheMarkers;
 Mat TheInputImage, TheInputImageCopy;
 CameraParameters TheCameraParameters;
@@ -49,8 +50,8 @@ void cvTackBarEvents(int pos, void *);
 bool readCameraParameters(string TheIntrinsicFile, CameraParameters &CP, Size size);
 
 pair< double, double > AvrgTime(0, 0); // determines the average time required for detection
-double ThresParam1, ThresParam2;
-int iThresParam1, iThresParam2;
+double ThresParam1 = 21;
+double ThresParam2 = 7;
 int waitTime = 0;
 bool lockedCorners = false;
 int findParam(std::string param, int argc, char *argv[]) {
@@ -84,19 +85,17 @@ float getParamVal(string param, int argc, char **argv, float defvalue = -1) {
 
 /************************************
  *
- *
- *
- *
  ************************************/
 bool readArguments(int argc, char **argv) {
     bool mustExit = false;
-    TheInputVideo = getParamString("-in", argc, argv);
+    TheInputImagePath = getParamString("-in", argc, argv);
     TheDictionaryFile = getParamString("-d", argc, argv);
+	TheLogFilePath = getParamString("-o", argc, argv);
     TheIntrinsicFile = getParamString("-i", argc, argv);
     TheMarkerSize = getParamVal("-s", argc, argv, -1);
     if (findParam("-lockedcorners", argc, argv) != -1)
         lockedCorners = true;
-    if (TheInputVideo.empty()) {
+    if (TheInputImagePath.empty()) {
         mustExit = true;
         cerr << "-in required" << endl;
     }
@@ -104,13 +103,17 @@ bool readArguments(int argc, char **argv) {
         mustExit = true;
         cerr << "-d required" << endl;
     }
+	if (TheLogFilePath.empty()) {
+		mustExit = true;
+		cerr << "-o required" << endl;
+	}
 
     if (findParam("-h", argc, argv) != -1)
         mustExit = true;
 
     if (mustExit) {
         cerr << "Invalid number of arguments" << endl;
-        cerr << "Usage: -in  (in.avi|live) -d dictionary.yml [-i intrinsics.yml] [-s size] [-lockedcorners]\n \
+        cerr << "Usage: -in  (image) -d (dictionary.yml) -o (logfile.csv) [-i intrinsics.yml] [-s size] [-lockedcorners]\n \
 	in.avi/live: open videofile or connect to a camera using the OpenCV library \n \
 	dictionary.yml: input marker dictionary used for detection \n \
 	intrinsics.yml: input camera parameters (in OpenCV format) to allow camera pose estimation \n \
@@ -122,10 +125,10 @@ bool readArguments(int argc, char **argv) {
 
     return true;
 }
+double getDetectionTime(double startTick) {
+	return ((double)getTickCount() - startTick) / getTickFrequency();
+}
 /************************************
- *
- *
- *
  *
  ************************************/
 int main(int argc, char **argv) {
@@ -133,17 +136,13 @@ int main(int argc, char **argv) {
         if (readArguments(argc, argv) == false) {
             return 0;
         }
-        // parse arguments
-        ;
-        // read from camera or from  file
-        if (TheInputVideo == "live") {
-            TheVideoCapturer.open(0);
-            waitTime = 10;
-        } else
-            TheVideoCapturer.open(TheInputVideo);
+		TheInputImage = imread(TheInputImagePath);
+		logFile.open(TheLogFilePath);
+		logFile << "Time detection (ms);Detected markers" << endl;
+
         // check video is open
-        if (!TheVideoCapturer.isOpened()) {
-            cerr << "Could not open video" << endl;
+		if (TheInputImage.empty()) {
+			cerr << "Could not open image: " << TheInputImagePath << endl;
             return -1;
         }
 
@@ -160,18 +159,15 @@ int main(int argc, char **argv) {
 
         HighlyReliableMarkers::loadDictionary(D);
 
-        // read first image to get the dimensions
-        TheVideoCapturer >> TheInputImage;
-
         // read camera parameters if passed
         if (TheIntrinsicFile != "") {
             TheCameraParameters.readFromXMLFile(TheIntrinsicFile);
             TheCameraParameters.resize(TheInputImage.size());
         }
         // Configure other parameters
-        if (ThePyrDownLevel > 0)
-            MDetector.pyrDown(ThePyrDownLevel);
-
+		if (ThePyrDownLevel > 0) {
+			MDetector.pyrDown(ThePyrDownLevel);
+		}
 
         MDetector.enableLockedCornersMethod(lockedCorners);
         MDetector.setMakerDetectorFunction(aruco::HighlyReliableMarkers::detect);
@@ -179,97 +175,32 @@ int main(int argc, char **argv) {
         MDetector.setCornerRefinementMethod(aruco::MarkerDetector::LINES);
         MDetector.setWarpSize((D[0].n() + 2) * 8);
         MDetector.setMinMaxSize(0.005, 0.5);
-
-
-        // Create gui
-
-        cv::namedWindow("thres", 1);
-        cv::namedWindow("in", 1);
         MDetector.getThresholdParams(ThresParam1, ThresParam2);
-        iThresParam1 = ThresParam1;
-        iThresParam2 = ThresParam2;
-        cv::createTrackbar("ThresParam1", "in", &iThresParam1, 35, cvTackBarEvents);
-        cv::createTrackbar("ThresParam2", "in", &iThresParam2, 35, cvTackBarEvents);
-
 		MDetector.createCudaBuffers(TheInputImage.size().width, TheInputImage.size().height);
 
-        char key = 0;
-        int index = 0;
-        // capture until press ESC or until the end of the video
-        do {
-            TheVideoCapturer.retrieve(TheInputImage);
-            // 	    cv::cvtColor(TheInputImage,TheInputImage,CV_BayerBG2BGR);
+        // 	    cv::cvtColor(TheInputImage,TheInputImage,CV_BayerBG2BGR);
 
-            index++; // number of images captured
-            double tick = (double)getTickCount(); // for checking the speed
-            // Detection of markers in the image passed
-            MDetector.detect(TheInputImage, TheMarkers, TheCameraParameters, TheMarkerSize);
-            // chekc the speed by calculating the mean speed of all iterations
-            AvrgTime.first += ((double)getTickCount() - tick) / getTickFrequency();
-            AvrgTime.second++;
-            cout << "Time detection=" << 1000 * AvrgTime.first / AvrgTime.second << " milliseconds" << endl;
+        double tick = (double) getTickCount(); // for checking the speed
+        // Detection of markers in the image passed
+        MDetector.detect(TheInputImage, TheMarkers, TheCameraParameters, TheMarkerSize);
+        // chekc the speed by calculating the mean speed of all iterations
+		logFile << getDetectionTime(tick) << ";";
 
-            // print marker info and draw the markers in image
-            TheInputImage.copyTo(TheInputImageCopy);
-            for (unsigned int i = 0; i < TheMarkers.size(); i++) {
-                cout << TheMarkers[i] << endl;
-                TheMarkers[i].draw(TheInputImageCopy, Scalar(0, 0, 255), 1);
-            }
+		for (unsigned int i = 0; i < TheMarkers.size(); i++) {
+			if (i != 0) {
+				logFile << ",";
+			}
+			logFile << to_string(TheMarkers[i].id);
+		}
+		logFile << endl;
 
-            // draw a 3d cube in each marker if there is 3d info
-            if (TheCameraParameters.isValid())
-                for (unsigned int i = 0; i < TheMarkers.size(); i++) {
-                    CvDrawingUtils::draw3dCube(TheInputImageCopy, TheMarkers[i], TheCameraParameters);
-                    CvDrawingUtils::draw3dAxis(TheInputImageCopy, TheMarkers[i], TheCameraParameters);
-                }
-            // DONE! Easy, right?
-            cout << endl << endl << endl;
-            // show input with augmented information and  the thresholded image
-            cv::imshow("in", TheInputImageCopy);
-            cv::imshow("thres", MDetector.getThresholdedImage());
+        //cv::waitKey(0); // wait for key to be pressed
 
-            key = cv::waitKey(waitTime); // wait for key to be pressed
-        } while (key != 27 && TheVideoCapturer.grab());
+		logFile.close();
 
     } catch (std::exception &ex)
 
     {
         cout << "Exception :" << ex.what() << endl;
     }
-}
-/************************************
- *
- *
- *
- *
- ************************************/
-
-void cvTackBarEvents(int pos, void *) {
-    if (iThresParam1 < 3)
-        iThresParam1 = 3;
-    if (iThresParam1 % 2 != 1)
-        iThresParam1++;
-    if (ThresParam2 < 1)
-        ThresParam2 = 1;
-    ThresParam1 = iThresParam1;
-    ThresParam2 = iThresParam2;
-    MDetector.setThresholdParams(ThresParam1, ThresParam2);
-    // recompute
-    MDetector.detect(TheInputImage, TheMarkers, TheCameraParameters);
-    TheInputImage.copyTo(TheInputImageCopy);
-    for (unsigned int i = 0; i < TheMarkers.size(); i++)
-        TheMarkers[i].draw(TheInputImageCopy, Scalar(0, 0, 255), 1);
-    // print other rectangles that contains no valid markers
-    /*for (unsigned int i=0;i<MDetector.getCandidates().size();i++) {
-        aruco::Marker m( MDetector.getCandidates()[i],999);
-        m.draw(TheInputImageCopy,cv::Scalar(255,0,0));
-    }*/
-
-    // draw a 3d cube in each marker if there is 3d info
-    if (TheCameraParameters.isValid())
-        for (unsigned int i = 0; i < TheMarkers.size(); i++)
-            CvDrawingUtils::draw3dCube(TheInputImageCopy, TheMarkers[i], TheCameraParameters);
-
-    cv::imshow("in", TheInputImageCopy);
-    cv::imshow("thres", MDetector.getThresholdedImage());
 }

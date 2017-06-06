@@ -1,7 +1,10 @@
 - git clone
 - cmake - target build priecinok
+- prepnut build na release
 - build all - spadne to
 - nakopyrovat vo vs z projektu cuda_aruco Object Files (priecinok aj so subormi) do projektu aruco (druhy z hora !!!)
+- build all
+- nakopyrovat v OS c:\Intel\INDE\cuda_aruco\build\src\CMakeFiles\cuda_aruco.dir\Release\*.obj do c:\Intel\INDE\cuda_aruco\build\src\CMakeFiles\cuda_aruco.dir\Debug\
 - build all
 
 pre uspesny run pridat buffer MDetector.createCudaBuffers(TheInputImage.size().width, TheInputImage.size().height);

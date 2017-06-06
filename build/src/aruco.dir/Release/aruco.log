@@ -1,6 +1,697 @@
-﻿Build started 6.6.2017 17:43:44.
-     1>Project "c:\Users\Mato\Fixer\cuda_aruco\build\src\aruco.vcxproj" on node 2 (Build target(s)).
-     1>Link:
+﻿Build started 6.6.2017 22:00:47.
+     1>Project "c:\Users\Mato\Fixer\cuda_aruco\build\src\aruco.vcxproj" on node 2 (Rebuild target(s)).
+     1>CustomBuild:
+         Building NVCC (Device) object src/CMakeFiles/cuda_aruco.dir/Release/cuda_aruco_generated_cudaImage.cu.obj
+         cudaImage.cu
+         cudaImage.cu
+         Building NVCC (Device) object src/CMakeFiles/cuda_aruco.dir/Release/cuda_aruco_generated_cuda_aruco.cu.obj
+         cuda_aruco.cu
+         cuda_aruco.cu
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(41): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(42): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(43): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(46): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(222): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(224): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(226): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:/Users/Mato/Fixer/cuda_aruco/src/cuda_aruco.cu(231): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+         Building Custom Rule C:/Users/Mato/Fixer/cuda_aruco/src/CMakeLists.txt
+         CMake does not need to re-run because C:/Users/Mato/Fixer/cuda_aruco/build/src/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\Intel\INDE\OpenCV_3.1_build_x64 /IC:\Intel\INDE\OpenCV_3.1_src\include /IC:\Intel\INDE\OpenCV_3.1_src\include\opencv /IC:\Intel\INDE\OpenCV_3.1_src\modules\cudev\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\hal\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\core\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\cudaarithm\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\flann\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\imgproc\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\ml\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\video\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\cudabgsegm\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\cudafilters\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\cudaimgproc\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\cudawarping\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\imgcodecs\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\photo\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\shape\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\videoio\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\cudacodec\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\highgui\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\objdetect\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\ts\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\features2d\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\calib3d\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\cudafeatures2d\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\cudalegacy\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\cudaobjdetect\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\cudaoptflow\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\cudastereo\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\stitching\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\superres\include /IC:\Intel\INDE\OpenCV_3.1_src\modules\videostab\include /IC:\Users\Mato\Fixer\cuda_aruco\src\. /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /IC:\Users\Mato\Fixer\cuda_aruco\build\src /nologo /W3 /WX- /O2 /Ob2 /D WIN32 /D _WINDOWS /D NDEBUG /D OPENCV_VERSION_3 /D "CMAKE_INTDIR=\"Release\"" /D DSO_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"aruco.dir\Release\\" /Fd"aruco.dir\Release\vc120.pdb" /Gd /TP /errorReport:prompt   -fPIC C:\Users\Mato\Fixer\cuda_aruco\src\ar_omp.cpp C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp C:\Users\Mato\Fixer\cuda_aruco\src\board.cpp C:\Users\Mato\Fixer\cuda_aruco\src\boarddetector.cpp C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp C:\Users\Mato\Fixer\cuda_aruco\src\subpixelcorner.cpp
+     1>cl : Command line warning D9002: ignoring unknown option '-fPIC'
+         ar_omp.cpp
+         arucofidmarkers.cpp
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(41): warning C4251: 'aruco::CameraParameters::CameraMatrix' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(43): warning C4251: 'aruco::CameraParameters::Distorsion' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(45): warning C4251: 'aruco::CameraParameters::CamSize' : class 'cv::Size_<int>' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(55): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(61): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(76): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(79): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(83): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(105): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(118): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(128): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(129): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Rvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Tvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(75): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(82): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(99): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(86): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(97): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(100): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(112): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(120): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(123): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(133): warning C4251: 'aruco::Board::Rvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Board'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(133): warning C4251: 'aruco::Board::Tvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Board'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(146): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(158): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(163): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(166): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\arucofidmarkers.h(67): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\arucofidmarkers.h(78): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\arucofidmarkers.h(89): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\arucofidmarkers.h(100): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\arucofidmarkers.h(111): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\arucofidmarkers.h(114): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(45): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(69): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(77): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(104): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(132): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(136): warning C4244: 'argument' : conversion from 'int64' to 'unsigned int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(160): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(161): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(162): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(163): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(165): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(179): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(182): warning C4244: 'argument' : conversion from 'int64' to 'unsigned int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(217): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(218): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(219): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(220): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(223): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(242): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(246): warning C4244: 'argument' : conversion from 'int64' to 'unsigned int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(270): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(271): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(272): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(273): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(276): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(313): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(427): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\arucofidmarkers.cpp(475): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         board.cpp
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(41): warning C4251: 'aruco::CameraParameters::CameraMatrix' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(43): warning C4251: 'aruco::CameraParameters::Distorsion' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(45): warning C4251: 'aruco::CameraParameters::CamSize' : class 'cv::Size_<int>' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(55): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(61): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(76): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(79): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(83): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(105): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(118): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(128): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(129): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Rvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Tvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(75): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(82): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(99): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(86): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(97): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(100): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(112): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(120): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(123): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(133): warning C4251: 'aruco::Board::Rvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Board'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(133): warning C4251: 'aruco::Board::Tvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Board'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(146): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(158): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(163): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(166): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\board.cpp(44): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\board.cpp(71): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\board.cpp(78): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\board.cpp(101): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\board.cpp(113): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\board.cpp(143): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\board.cpp(149): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\board.cpp(159): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\board.cpp(213): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\board.cpp(307): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\board.cpp(336): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         boarddetector.cpp
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(41): warning C4251: 'aruco::CameraParameters::CameraMatrix' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(43): warning C4251: 'aruco::CameraParameters::Distorsion' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(45): warning C4251: 'aruco::CameraParameters::CamSize' : class 'cv::Size_<int>' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(55): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(61): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(76): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(79): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(83): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(105): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(118): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(128): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(129): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Rvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Tvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(75): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(82): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(99): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(86): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(97): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(100): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(112): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(120): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(123): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(133): warning C4251: 'aruco::Board::Rvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Board'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(133): warning C4251: 'aruco::Board::Tvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Board'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(146): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(158): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(163): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(166): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(48): warning C4251: 'aruco::MarkerDetector::processor' : class 'cuda_aruco::CudaProcessor' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 c:\users\mato\fixer\cuda_aruco\src\cuda_aruco.h(10) : see declaration of 'cuda_aruco::CudaProcessor'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(49): warning C4251: 'aruco::MarkerDetector::cudaImages' : class 'std::vector<CudaImage,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 with
+                 [
+                     _Ty=CudaImage
+                 ]
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(94): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(106): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(184): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(223): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(265): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(283): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(308): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(311): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(334): warning C4251: 'aruco::MarkerDetector::_candidates' : class 'std::vector<std::vector<cv::Point2f,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(336): warning C4251: 'aruco::MarkerDetector::grey' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(336): warning C4251: 'aruco::MarkerDetector::thres' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(336): warning C4251: 'aruco::MarkerDetector::thresh_gpu' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(138): warning C4244: '=' : conversion from 'size_t' to 'double', possible loss of data
+     1>c:\users\mato\fixer\cuda_aruco\src\boarddetector.h(81): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\boarddetector.h(107): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\boarddetector.h(109): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\boarddetector.cpp(68): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\boarddetector.cpp(84): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\boarddetector.cpp(92): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\boarddetector.cpp(102): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\boarddetector.cpp(183): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\boarddetector.cpp(185): warning C4267: 'argument' : conversion from 'size_t' to 'const int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\boarddetector.cpp(209): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\boarddetector.cpp(218): warning C4305: 'initializing' : truncation from 'double' to 'float'
+         cameraparameters.cpp
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(41): warning C4251: 'aruco::CameraParameters::CameraMatrix' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(43): warning C4251: 'aruco::CameraParameters::Distorsion' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(45): warning C4251: 'aruco::CameraParameters::CamSize' : class 'cv::Size_<int>' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(55): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(61): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(76): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(79): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(83): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(105): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(118): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(128): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(129): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp(47): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp(68): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp(106): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp(138): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp(140): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp(146): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp(175): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp(196): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp(236): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp(273): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp(331): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cameraparameters.cpp(397): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+         chromaticmask.cpp
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(41): warning C4251: 'aruco::CameraParameters::CameraMatrix' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(43): warning C4251: 'aruco::CameraParameters::Distorsion' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(45): warning C4251: 'aruco::CameraParameters::CamSize' : class 'cv::Size_<int>' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(55): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(61): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(76): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(79): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(83): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(105): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(118): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(128): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(129): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Rvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Tvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(75): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(82): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(99): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(86): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(97): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(100): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(112): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(120): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(123): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(133): warning C4251: 'aruco::Board::Rvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Board'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(133): warning C4251: 'aruco::Board::Tvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Board'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(146): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(158): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(163): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(166): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(48): warning C4251: 'aruco::MarkerDetector::processor' : class 'cuda_aruco::CudaProcessor' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 c:\users\mato\fixer\cuda_aruco\src\cuda_aruco.h(10) : see declaration of 'cuda_aruco::CudaProcessor'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(49): warning C4251: 'aruco::MarkerDetector::cudaImages' : class 'std::vector<CudaImage,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 with
+                 [
+                     _Ty=CudaImage
+                 ]
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(94): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(106): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(184): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(223): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(265): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(283): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(308): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(311): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(334): warning C4251: 'aruco::MarkerDetector::_candidates' : class 'std::vector<std::vector<cv::Point2f,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(336): warning C4251: 'aruco::MarkerDetector::grey' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(336): warning C4251: 'aruco::MarkerDetector::thres' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(336): warning C4251: 'aruco::MarkerDetector::thresh_gpu' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(138): warning C4244: '=' : conversion from 'size_t' to 'double', possible loss of data
+     1>c:\users\mato\fixer\cuda_aruco\src\boarddetector.h(81): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\boarddetector.h(107): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\boarddetector.h(109): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\chromaticmask.h(59): warning C4251: 'EMClassifier::_classifier' : struct 'cv::Ptr<cv::ml::EM>' needs to have dll-interface to be used by clients of class 'EMClassifier'
+     1>c:\users\mato\fixer\cuda_aruco\src\chromaticmask.h(63): warning C4251: 'EMClassifier::_samples' : class 'std::vector<uchar,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'EMClassifier'
+                 with
+                 [
+                     _Ty=uchar
+                 ]
+     1>c:\users\mato\fixer\cuda_aruco\src\chromaticmask.h(52): warning C4267: 'return' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>c:\users\mato\fixer\cuda_aruco\src\chromaticmask.h(101): warning C4251: 'ChromaticMask::_perpTrans' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'ChromaticMask'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\chromaticmask.h(102): warning C4251: 'ChromaticMask::_classifiers' : class 'std::vector<EMClassifier,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'ChromaticMask'
+                 with
+                 [
+                     _Ty=EMClassifier
+                 ]
+     1>c:\users\mato\fixer\cuda_aruco\src\chromaticmask.h(106): warning C4251: 'ChromaticMask::_cell_neighbours' : class 'std::vector<std::vector<size_t,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of class 'ChromaticMask'
+                 with
+                 [
+                     _Ty=size_t
+                 ]
+     1>c:\users\mato\fixer\cuda_aruco\src\chromaticmask.h(113): warning C4251: 'ChromaticMask::_canonicalPos' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'ChromaticMask'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\chromaticmask.h(113): warning C4251: 'ChromaticMask::_cellMap' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'ChromaticMask'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\chromaticmask.h(113): warning C4251: 'ChromaticMask::_mask' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'ChromaticMask'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\chromaticmask.h(113): warning C4251: 'ChromaticMask::_maskAux' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'ChromaticMask'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\chromaticmask.h(95): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(136): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(151): warning C4244: '*=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(152): warning C4244: '*=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(153): warning C4244: '*=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(154): warning C4244: '*=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(183): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(204): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(205): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(206): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(215): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(216): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(257): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(258): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(259): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(260): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(263): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(264): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(265): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(266): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(281): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(282): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(328): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(331): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(390): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(391): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(392): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(405): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(409): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(411): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(417): warning C4018: '>' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(428): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(452): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\chromaticmask.cpp(455): warning C4018: '<' : signed/unsigned mismatch
+         cvdrawingutils.cpp
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(41): warning C4251: 'aruco::CameraParameters::CameraMatrix' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(43): warning C4251: 'aruco::CameraParameters::Distorsion' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(45): warning C4251: 'aruco::CameraParameters::CamSize' : class 'cv::Size_<int>' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(55): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(61): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(76): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(79): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(83): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(105): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(118): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(128): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(129): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Rvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Tvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(75): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(82): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(99): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(48): warning C4251: 'aruco::MarkerDetector::processor' : class 'cuda_aruco::CudaProcessor' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 c:\users\mato\fixer\cuda_aruco\src\cuda_aruco.h(10) : see declaration of 'cuda_aruco::CudaProcessor'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(49): warning C4251: 'aruco::MarkerDetector::cudaImages' : class 'std::vector<CudaImage,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 with
+                 [
+                     _Ty=CudaImage
+                 ]
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(94): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(106): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(184): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(223): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(265): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(283): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(308): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(311): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(334): warning C4251: 'aruco::MarkerDetector::_candidates' : class 'std::vector<std::vector<cv::Point2f,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(336): warning C4251: 'aruco::MarkerDetector::grey' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(336): warning C4251: 'aruco::MarkerDetector::thres' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(336): warning C4251: 'aruco::MarkerDetector::thresh_gpu' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(138): warning C4244: '=' : conversion from 'size_t' to 'double', possible loss of data
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(86): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(97): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(100): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(112): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(120): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(123): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(133): warning C4251: 'aruco::Board::Rvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Board'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(133): warning C4251: 'aruco::Board::Tvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Board'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(146): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(158): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(163): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(166): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\boarddetector.h(81): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\boarddetector.h(107): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\boarddetector.h(109): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(78): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(80): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(81): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(83): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(84): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(86): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(87): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(89): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(91): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(93): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(94): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(96): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(97): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(99): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(100): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(102): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(104): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(105): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(107): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(108): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(110): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(111): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(113): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(114): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(117): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(118): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(120): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(121): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(123): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(124): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(126): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\cvdrawingutils.cpp(127): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         highlyreliablemarkers.cpp
+     1>c:\users\mato\fixer\cuda_aruco\src\highlyreliablemarkers.h(146): warning C4251: 'aruco::MarkerCode::_bits' : class 'std::vector<bool,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'aruco::MarkerCode'
+                 with
+                 [
+                     _Ty=bool
+                 ]
+     1>c:\users\mato\fixer\cuda_aruco\src\highlyreliablemarkers.h(260): warning C4251: 'aruco::HighlyReliableMarkers::_binaryTree' : class 'aruco::HighlyReliableMarkers::BalancedBinaryTree' needs to have dll-interface to be used by clients of class 'aruco::HighlyReliableMarkers'
+                 c:\users\mato\fixer\cuda_aruco\src\highlyreliablemarkers.h(217) : see declaration of 'aruco::HighlyReliableMarkers::BalancedBinaryTree'
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp(105): warning C4267: 'initializing' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp(120): warning C4267: 'initializing' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp(284): warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp(353): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp(357): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp(374): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp(375): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp(410): warning C4267: 'initializing' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp(432): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp(438): warning C4267: 'initializing' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\utility(144): warning C4267: 'initializing' : conversion from 'size_t' to 'unsigned int', possible loss of data
+                 C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp(420) : see reference to function template instantiation 'std::pair<unsigned int,unsigned int>::pair<unsigned int&,unsigned __int64,void>(_Other1,_Other2 &&)' being compiled
+                 with
+                 [
+                     _Other1=unsigned int &
+         ,            _Other2=unsigned __int64
+                 ]
+                 C:\Users\Mato\Fixer\cuda_aruco\src\highlyreliablemarkers.cpp(420) : see reference to function template instantiation 'std::pair<unsigned int,unsigned int>::pair<unsigned int&,unsigned __int64,void>(_Other1,_Other2 &&)' being compiled
+                 with
+                 [
+                     _Other1=unsigned int &
+         ,            _Other2=unsigned __int64
+                 ]
+         marker.cpp
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(41): warning C4251: 'aruco::CameraParameters::CameraMatrix' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(43): warning C4251: 'aruco::CameraParameters::Distorsion' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(45): warning C4251: 'aruco::CameraParameters::CamSize' : class 'cv::Size_<int>' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(55): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(61): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(76): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(79): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(83): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(105): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(118): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(128): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(129): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Rvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Tvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(75): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(82): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(99): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(73): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(128): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(227): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(231): warning C4244: '+=' : conversion from 'const float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(232): warning C4244: '+=' : conversion from 'const float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(234): warning C4244: '/=' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(235): warning C4244: '/=' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(242): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(252): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(262): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(263): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(265): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(266): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(268): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(269): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(271): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(272): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(303): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(340): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\marker.cpp(348): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+         markerdetector.cpp
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(41): warning C4251: 'aruco::CameraParameters::CameraMatrix' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(43): warning C4251: 'aruco::CameraParameters::Distorsion' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(45): warning C4251: 'aruco::CameraParameters::CamSize' : class 'cv::Size_<int>' needs to have dll-interface to be used by clients of class 'aruco::CameraParameters'
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(55): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(61): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(76): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(79): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(83): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(105): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(118): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(128): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\cameraparameters.h(129): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Rvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(48): warning C4251: 'aruco::Marker::Tvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Marker'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(75): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(82): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(87): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\marker.h(99): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(48): warning C4251: 'aruco::MarkerDetector::processor' : class 'cuda_aruco::CudaProcessor' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 c:\users\mato\fixer\cuda_aruco\src\cuda_aruco.h(10) : see declaration of 'cuda_aruco::CudaProcessor'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(49): warning C4251: 'aruco::MarkerDetector::cudaImages' : class 'std::vector<CudaImage,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 with
+                 [
+                     _Ty=CudaImage
+                 ]
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(94): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(106): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(184): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(223): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(265): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(283): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(308): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(311): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(334): warning C4251: 'aruco::MarkerDetector::_candidates' : class 'std::vector<std::vector<cv::Point2f,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 with
+                 [
+                     _Ty=cv::Point2f
+                 ]
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(336): warning C4251: 'aruco::MarkerDetector::grey' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(336): warning C4251: 'aruco::MarkerDetector::thres' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(336): warning C4251: 'aruco::MarkerDetector::thresh_gpu' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::MarkerDetector'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\markerdetector.h(138): warning C4244: '=' : conversion from 'size_t' to 'double', possible loss of data
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(86): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(97): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(100): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(112): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(120): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(123): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(133): warning C4251: 'aruco::Board::Rvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Board'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(133): warning C4251: 'aruco::Board::Tvec' : class 'cv::Mat' needs to have dll-interface to be used by clients of class 'aruco::Board'
+                 C:\Intel\INDE\OpenCV_3.1_src\modules\core\include\opencv2/core/mat.hpp(741) : see declaration of 'cv::Mat'
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(146): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(158): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(163): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\board.h(166): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\arucofidmarkers.h(67): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\arucofidmarkers.h(78): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\arucofidmarkers.h(89): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\arucofidmarkers.h(100): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\arucofidmarkers.h(111): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>c:\users\mato\fixer\cuda_aruco\src\arucofidmarkers.h(114): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(60): warning C4305: '=' : truncation from 'double' to 'float'
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(63): warning C4305: '=' : truncation from 'double' to 'float'
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(79): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(119): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(148): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(155): warning C4244: 'initializing' : conversion from 'int64' to 'double', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(167): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(174): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(212): warning C4244: 'initializing' : conversion from 'int64' to 'double', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(217): warning C4244: 'initializing' : conversion from 'int64' to 'double', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(248): warning C4244: 'initializing' : conversion from 'int64' to 'double', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(261): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(266): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(274): warning C4244: 'initializing' : conversion from 'int64' to 'double', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(293): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(294): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(314): warning C4244: 'initializing' : conversion from 'int64' to 'double', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(345): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(346): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(395): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(491): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(511): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(533): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(542): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(543): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(544): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(556): warning C4244: '=' : conversion from 'const float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(557): warning C4244: '=' : conversion from 'const float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(563): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(566): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(569): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(572): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(586): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(603): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(625): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(629): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(648): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(717): warning C4244: '+=' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(719): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(720): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(721): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(739): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(740): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(741): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(743): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(744): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(813): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(863): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(875): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(923): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(924): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1071): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1084): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1102): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1115): warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1116): warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1118): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1129): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1135): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1140): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1143): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1146): warning C4244: 'argument' : conversion from 'size_t' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1150): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1138) : definition of 'i' ignored
+                 C:\Users\Mato\Fixer\cuda_aruco\src\markerdetector.cpp(1114) : definition of 'i' used
+         subpixelcorner.cpp
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\subpixelcorner.cpp(165): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>C:\Users\Mato\Fixer\cuda_aruco\src\subpixelcorner.cpp(166): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+       Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Mato\Fixer\cuda_aruco\build\bin\Release\aruco130.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/x64" /LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/x64/Release" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_videostab310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_superres310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_stitching310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_shape310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_photo310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudastereo310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudaoptflow310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudaobjdetect310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudalegacy310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudaimgproc310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudafeatures2d310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudacodec310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudabgsegm310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_calib3d310.lib ..\bin\Release\cuda_aruco.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudawarping310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_objdetect310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudafilters310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudaarithm310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_features2d310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_ml310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_highgui310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_videoio310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_imgcodecs310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_flann310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_video310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_imgproc310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_core310.lib C:\Intel\INDE\OpenCV_3.1_build_x64\lib\Release\opencv_cudev310.lib "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\cudart_static.lib" "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\x64\cudadevrt.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:/Users/Mato/Fixer/cuda_aruco/build/bin/Release/aruco130.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Mato/Fixer/cuda_aruco/build/bin/Release/aruco130.lib" /MACHINE:X64   /machine:x64 /DLL aruco.dir\Release\ar_omp.obj
          aruco.dir\Release\arucofidmarkers.obj
          aruco.dir\Release\board.obj
@@ -17,8 +708,8 @@
          CMakeFiles\cuda_aruco.dir\Debug\cuda_aruco_intermediate_link.obj
             Creating library C:/Users/Mato/Fixer/cuda_aruco/build/bin/Release/aruco130.lib and object C:/Users/Mato/Fixer/cuda_aruco/build/bin/Release/aruco130.exp
          aruco.vcxproj -> C:\Users\Mato\Fixer\cuda_aruco\build\bin\Release\aruco130.dll
-     1>Done Building Project "c:\Users\Mato\Fixer\cuda_aruco\build\src\aruco.vcxproj" (Build target(s)).
+     1>Done Building Project "c:\Users\Mato\Fixer\cuda_aruco\build\src\aruco.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.30
+Time Elapsed 00:00:25.15
