@@ -1,0 +1,17 @@
+﻿Build started 6.6.2017 14:58:08.
+     1>Project "c:\Users\Mato\Fixer\cuda_aruco\build\src\cuda_aruco.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building NVCC (Device) object src/CMakeFiles/cuda_aruco.dir/Debug/cuda_aruco_generated_cuda_aruco.cu.obj
+         cuda_aruco.cu
+     1>cl : Command line warning D9025: overriding '/Od' with '/O2'
+     1>cl : Command line error D8016: '/RTC1' and '/O2' command-line options are incompatible
+         CMake Error at cuda_aruco_generated_cuda_aruco.cu.obj.Debug.cmake:222 (message):
+           Error generating
+           C:/Users/Mato/Fixer/cuda_aruco/build/src/CMakeFiles/cuda_aruco.dir//Debug/cuda_aruco_generated_cuda_aruco.cu.obj
+         
+         
+     1>Done Building Project "c:\Users\Mato\Fixer\cuda_aruco\build\src\cuda_aruco.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.49

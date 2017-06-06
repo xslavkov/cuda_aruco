@@ -1,0 +1,10 @@
+﻿Build started 6.6.2017 13:40:32.
+     1>Project "c:\Users\Mato\Fixer\cuda_aruco\build\ALL_BUILD.vcxproj" on node 8 (Rebuild target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Mato/Fixer/cuda_aruco/CMakeLists.txt
+         CMake does not need to re-run because C:/Users/Mato/Fixer/cuda_aruco/build/CMakeFiles/generate.stamp is up-to-date.
+     1>Done Building Project "c:\Users\Mato\Fixer\cuda_aruco\build\ALL_BUILD.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.12

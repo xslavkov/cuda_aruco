@@ -1,0 +1,13 @@
+﻿Build started 6.6.2017 17:42:27.
+     1>Project "c:\Users\Mato\Fixer\cuda_aruco\build\ZERO_CHECK.vcxproj" on node 2 (Rebuild target(s)).
+     1>CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because C:/Users/Mato/Fixer/cuda_aruco/build/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/Mato/Fixer/cuda_aruco/build/src/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/Mato/Fixer/cuda_aruco/build/utils/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/Mato/Fixer/cuda_aruco/build/utils_hrm/CMakeFiles/generate.stamp is up-to-date.
+     1>Done Building Project "c:\Users\Mato\Fixer\cuda_aruco\build\ZERO_CHECK.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.08

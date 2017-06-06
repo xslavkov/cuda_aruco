@@ -191,7 +191,7 @@ int main(int argc, char **argv) {
         cv::createTrackbar("ThresParam1", "in", &iThresParam1, 35, cvTackBarEvents);
         cv::createTrackbar("ThresParam2", "in", &iThresParam2, 35, cvTackBarEvents);
 
-
+		MDetector.createCudaBuffers(TheInputImage.size().width, TheInputImage.size().height);
 
         char key = 0;
         int index = 0;

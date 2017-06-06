@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="C:\Users\Mato\Fixer\cuda_aruco\src\ar_omp.cpp">
@@ -97,5 +97,19 @@
     <Filter Include="Header Files">
       <UniqueIdentifier>{B1E62692-0BB5-353D-8EBD-1CCD1704C41A}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{93137231-d054-43bf-af82-cbc26e3d938b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="CMakeFiles\cuda_aruco.dir\Debug\cuda_aruco_generated_cudaImage.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="CMakeFiles\cuda_aruco.dir\Debug\cuda_aruco_generated_cuda_aruco.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="CMakeFiles\cuda_aruco.dir\Debug\cuda_aruco_intermediate_link.obj">
+      <Filter>Object Files</Filter>
+    </Object>
   </ItemGroup>
 </Project>
