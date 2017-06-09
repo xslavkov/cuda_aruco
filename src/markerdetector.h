@@ -103,7 +103,7 @@ class ARUCO_EXPORTS MarkerDetector {
      * @param setYPerperdicular If set the Y axis will be perpendicular to the surface. Otherwise, it will be the Z axis
      */
     void detect(const cv::Mat &input, std::vector< Marker > &detectedMarkers, CameraParameters camParams, float markerSizeMeters = -1,
-                bool setYPerperdicular = false) throw(cv::Exception);
+		bool setYPerperdicular = false) throw(cv::Exception);
 
     /**This set the type of thresholding methods available
      */
@@ -148,6 +148,7 @@ class ARUCO_EXPORTS MarkerDetector {
      * Note for developer: Enabling this option forces a call to findCornerMaxima
      */
     void enableLockedCornersMethod(bool enable);
+	void enableCuda(bool enable);
 
     /**
      * Set the parameters of the threshold method
@@ -326,6 +327,7 @@ class ARUCO_EXPORTS MarkerDetector {
     // is corner locked
     bool _useLockedCorners;
 
+	bool _useCuda;
     // Speed control
     int _speed;
     int _markerWarpSize;

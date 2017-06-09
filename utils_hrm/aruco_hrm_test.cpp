@@ -37,11 +37,15 @@ using namespace aruco;
 
 string TheInputImagePath;
 string TheLogFilePath;
+string TheLogFileTotalPath;
 string TheIntrinsicFile;
 string TheDictionaryFile;
 ofstream logFile;
+ofstream logFileTotal;
 float TheMarkerSize = -1;
+int loopCount;
 int ThePyrDownLevel;
+bool useCuda;
 MarkerDetector MDetector;
 vector< Marker > TheMarkers;
 Mat TheInputImage, TheInputImageCopy;
@@ -91,8 +95,11 @@ bool readArguments(int argc, char **argv) {
     TheInputImagePath = getParamString("-in", argc, argv);
     TheDictionaryFile = getParamString("-d", argc, argv);
 	TheLogFilePath = getParamString("-o", argc, argv);
+	TheLogFileTotalPath = getParamString("-o2", argc, argv);
     TheIntrinsicFile = getParamString("-i", argc, argv);
+	loopCount = getParamVal("-l", argc, argv, 1);
     TheMarkerSize = getParamVal("-s", argc, argv, -1);
+	useCuda = getParamVal("-cuda", argc, argv, 1) == 1;
     if (findParam("-lockedcorners", argc, argv) != -1)
         lockedCorners = true;
     if (TheInputImagePath.empty()) {
@@ -103,9 +110,9 @@ bool readArguments(int argc, char **argv) {
         mustExit = true;
         cerr << "-d required" << endl;
     }
-	if (TheLogFilePath.empty()) {
+	if (TheLogFilePath.empty() || TheLogFileTotalPath.empty()) {
 		mustExit = true;
-		cerr << "-o required" << endl;
+		cerr << "-o or -o2 required" << endl;
 	}
 
     if (findParam("-h", argc, argv) != -1)
@@ -113,7 +120,7 @@ bool readArguments(int argc, char **argv) {
 
     if (mustExit) {
         cerr << "Invalid number of arguments" << endl;
-        cerr << "Usage: -in  (image) -d (dictionary.yml) -o (logfile.csv) [-i intrinsics.yml] [-s size] [-lockedcorners]\n \
+        cerr << "Usage: -in  (image) -d (dictionary.yml) -o (logfile.csv) -o2 (logfileTotal.csv) [-cuda 0/1] [-l loopCount] [-i intrinsics.yml] [-s size] [-lockedcorners]\n \
 	in.avi/live: open videofile or connect to a camera using the OpenCV library \n \
 	dictionary.yml: input marker dictionary used for detection \n \
 	intrinsics.yml: input camera parameters (in OpenCV format) to allow camera pose estimation \n \
@@ -126,7 +133,7 @@ bool readArguments(int argc, char **argv) {
     return true;
 }
 double getDetectionTime(double startTick) {
-	return ((double)getTickCount() - startTick) / getTickFrequency();
+	return (((double)getTickCount() - startTick) / getTickFrequency()) * 1000;
 }
 /************************************
  *
@@ -137,8 +144,14 @@ int main(int argc, char **argv) {
             return 0;
         }
 		TheInputImage = imread(TheInputImagePath);
-		logFile.open(TheLogFilePath);
-		logFile << "Time detection (ms);Detected markers" << endl;
+		if (!TheLogFilePath.empty()) {
+			logFile.open(TheLogFilePath);
+			logFile << "Time detection (ms);Detected markers" << endl;
+		}
+		if (!TheLogFileTotalPath.empty()) {
+			logFileTotal.open(TheLogFileTotalPath);
+			logFileTotal << "Total detection time (ms)" << endl;
+		}
 
         // check video is open
 		if (TheInputImage.empty()) {
@@ -170,33 +183,55 @@ int main(int argc, char **argv) {
 		}
 
         MDetector.enableLockedCornersMethod(lockedCorners);
+		MDetector.enableCuda(useCuda);
         MDetector.setMakerDetectorFunction(aruco::HighlyReliableMarkers::detect);
         MDetector.setThresholdParams(21, 7);
         MDetector.setCornerRefinementMethod(aruco::MarkerDetector::LINES);
         MDetector.setWarpSize((D[0].n() + 2) * 8);
         MDetector.setMinMaxSize(0.005, 0.5);
         MDetector.getThresholdParams(ThresParam1, ThresParam2);
-		MDetector.createCudaBuffers(TheInputImage.size().width, TheInputImage.size().height);
+		//if (useCuda) {
+			MDetector.createCudaBuffers(TheInputImage.size().width, TheInputImage.size().height);
+		//}
 
         // 	    cv::cvtColor(TheInputImage,TheInputImage,CV_BayerBG2BGR);
 
-        double tick = (double) getTickCount(); // for checking the speed
-        // Detection of markers in the image passed
-        MDetector.detect(TheInputImage, TheMarkers, TheCameraParameters, TheMarkerSize);
-        // chekc the speed by calculating the mean speed of all iterations
-		logFile << getDetectionTime(tick) << ";";
+		double tick;
+		double tickTotal = (double)getTickCount(); // for checking the speed
+		for (int j = 0; j < loopCount; j++) {
+			tick = (double)getTickCount(); // for checking the speed
+			// Detection of markers in the image passed
+			MDetector.detect(TheInputImage, TheMarkers, TheCameraParameters, TheMarkerSize);
+			// chekc the speed by calculating the mean speed of all iterations
 
-		for (unsigned int i = 0; i < TheMarkers.size(); i++) {
-			if (i != 0) {
-				logFile << ",";
+			if (!TheLogFilePath.empty()) {
+				logFile << getDetectionTime(tick) << ";";
+				for (unsigned int i = 0; i < TheMarkers.size(); i++) {
+					//TheMarkers[i].draw(TheInputImage, Scalar(0, 0, 255), 1);
+					if (i != 0) {
+						logFile << ",";
+					}
+					logFile << to_string(TheMarkers[i].id);
+				}
+				logFile << endl;
 			}
-			logFile << to_string(TheMarkers[i].id);
 		}
-		logFile << endl;
+		if (!TheLogFileTotalPath.empty()) {
+			logFileTotal << getDetectionTime(tickTotal) << endl;
+		}
 
-        //cv::waitKey(0); // wait for key to be pressed
+		//Mat small;
+		//Size outputSize(640, 400);
+		//resize(TheInputImage, small, outputSize);
+		//imshow("Window", small);
+  //      cv::waitKey(0); // wait for key to be pressed
 
-		logFile.close();
+		if (!TheLogFilePath.empty()) {
+			logFile.close();
+		}
+		if (!TheLogFileTotalPath.empty()) {
+			logFileTotal.close();
+		}
 
     } catch (std::exception &ex)
 

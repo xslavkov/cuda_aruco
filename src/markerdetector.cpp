@@ -52,6 +52,7 @@ MarkerDetector::MarkerDetector() {
     _thresParam1 = _thresParam2 = 7;
     _cornerMethod = LINES;
     _useLockedCorners = false;
+	_useCuda = false;
     //         _cornerMethod=SUBPIX;
     _thresParam1_range = 0;
     _markerWarpSize = 56;
@@ -71,7 +72,6 @@ MarkerDetector::MarkerDetector() {
  ************************************/
 
 MarkerDetector::~MarkerDetector() {}
-
 
   void MarkerDetector::createCudaBuffers(size_t _width, size_t _height) {
     std::cout << "creating buffer\n";
@@ -120,6 +120,9 @@ void MarkerDetector::setDesiredSpeed(int val) {
     detect(input, detectedMarkers, camParams.CameraMatrix, camParams.Distorsion, markerSizeMeters, setYPerpendicular);
 }
 
+  void MarkerDetector::enableCuda(bool enable) {
+	  _useCuda = enable;
+  }
 /***
  *
  *
@@ -167,47 +170,47 @@ void MarkerDetector::enableLockedCornersMethod(bool enable) {
     int n_param1 = 2 * _thresParam1_range + 1;
     vector< cv::Mat > thres_images(n_param1);
 
-    vector< cv::Mat > thresh_images_gpu(n_param1);
 
-    //if (cudaImages[0].h_data == NULL) {
-    cudaImages[0].h_data = imgToBeThresHolded.data;
-    cudaImages[0].pitch_h = imgToBeThresHolded.step;
-    cudaImages[0].Download();
+	if (_useCuda) {
+		vector< cv::Mat > thresh_images_gpu(n_param1);
 
-    static float* tmp = NULL;
-    static size_t pp;
-    if(!tmp) {
-      processor.mallocPitch((void**)&tmp, &pp, sizeof(float)*cudaImages[0].width, 6*cudaImages[0].height);
-      pp /= sizeof(float);
-      std::cout << "allocating float with pitch: " << pp << std::endl;
-    }
-    
-    
-    for (int i = 0; i < n_param1; i++) {
-        double t1 = ThresParam1 - _thresParam1_range + _thresParam1_range * i;
-        boxSizes_h[i] = t1;
-    }
-    processor.cuda_threshold(cudaImages[0], tmp, pp, cudaImages[1+n_param1], boxSizes_h, ThresParam2);
-    for (int i = 0; i < n_param1; i++) {
-        int ndims = 2;
-        int sizes[2]; sizes[0] = imgToBeThresHolded.rows; sizes[1] = imgToBeThresHolded.cols;
-        size_t steps[1]; steps[0] = imgToBeThresHolded.cols;
-        thres_images[i] = cv::Mat(ndims,sizes,CV_8UC1,cudaImages[1+n_param1+i].h_data, steps);
-        cudaImages[1+n_param1+i].Readback();
-    }
-    processor.sync();
+		//if (cudaImages[0].h_data == NULL) {
+		cudaImages[0].h_data = imgToBeThresHolded.data;
+		cudaImages[0].pitch_h = imgToBeThresHolded.step;
+		cudaImages[0].Download();
 
-    /*
-    #pragma omp parallel for
-    for (int i = 0; i < n_param1; i++) {
-        double t1 = ThresParam1 - _thresParam1_range + _thresParam1_range * i;
-        thresHold(_thresMethod, imgToBeThresHolded, thres_images[i], t1, ThresParam2);
-	}*/
+		static float* tmp = NULL;
+		static size_t pp;
+		if (!tmp) {
+			processor.mallocPitch((void**)&tmp, &pp, sizeof(float)*cudaImages[0].width, 6 * cudaImages[0].height);
+			pp /= sizeof(float);
+			std::cout << "allocating float with pitch: " << pp << std::endl;
+		}
 
+
+		for (int i = 0; i < n_param1; i++) {
+			double t1 = ThresParam1 - _thresParam1_range + _thresParam1_range * i;
+			boxSizes_h[i] = t1;
+		}
+		processor.cuda_threshold(cudaImages[0], tmp, pp, cudaImages[1 + n_param1], boxSizes_h, ThresParam2);
+		for (int i = 0; i < n_param1; i++) {
+			int ndims = 2;
+			int sizes[2]; sizes[0] = imgToBeThresHolded.rows; sizes[1] = imgToBeThresHolded.cols;
+			size_t steps[1]; steps[0] = imgToBeThresHolded.cols;
+			thres_images[i] = cv::Mat(ndims, sizes, CV_8UC1, cudaImages[1 + n_param1 + i].h_data, steps);
+			cudaImages[1 + n_param1 + i].Readback();
+		}
+		processor.sync();
+	}
+	else {
+		#pragma omp parallel for
+		for (int i = 0; i < n_param1; i++) {
+			double t1 = ThresParam1 - _thresParam1_range + _thresParam1_range * i;
+			thresHold(_thresMethod, imgToBeThresHolded, thres_images[i], t1, ThresParam2);
+		}
+	}
 
     thres = thres_images[n_param1 / 2];
-
-//    cv::imwrite("tnp.pgm",imgToBeThresHolded);
 
     double t2 = cv::getTickCount();
     // find all rectangles in the thresholdes image
@@ -339,76 +342,129 @@ void MarkerDetector::detectRectangles(const cv::Mat &thres, vector< std::vector<
 }
 
 void MarkerDetector::detectRectangles(vector< cv::Mat > &thresImgv, vector< MarkerCandidate > &OutMarkerCanditates) {
-    //         omp_set_num_threads ( 1 );
-    vector< vector< MarkerCandidate > > MarkerCanditatesV(omp_get_max_threads());
+	// join all candidates
+	vector< MarkerCandidate> MarkerCanditates;
+    vector<vector<MarkerCandidate>> MarkerCanditatesV(omp_get_max_threads());
     // calcualte the min_max contour sizes
     int minSize = _minSize * std::max(thresImgv[0].cols, thresImgv[0].rows) * 4;
     int maxSize = _maxSize * std::max(thresImgv[0].cols, thresImgv[0].rows) * 4;
 
-//         cv::Mat input;
-//         cv::cvtColor ( thresImgv[0],input,CV_GRAY2BGR );
+	if (_useCuda) {
+		#pragma omp parallel for
+		for (size_t i = 0; i < thresImgv.size(); i++) {
+			std::vector< cv::Vec4i > hierarchy2;
+			std::vector< std::vector< cv::Point > > contours2;
+			cv::Mat thres2;
+			thresImgv[i].copyTo(thres2);
+			cv::findContours(thres2, contours2, hierarchy2, CV_RETR_LIST, CV_CHAIN_APPROX_NONE);
 
-#pragma omp parallel for
-    for (size_t i = 0; i < thresImgv.size(); i++) {
-        std::vector< cv::Vec4i > hierarchy2;
-        std::vector< std::vector< cv::Point > > contours2;
-        cv::Mat thres2;
-        thresImgv[i].copyTo(thres2);
-        cv::findContours(thres2, contours2, hierarchy2, CV_RETR_LIST, CV_CHAIN_APPROX_NONE);
+			vector< Point > approxCurve;
+			/// for each contour, analyze if it is a paralelepiped likely to be the marker
+			for (unsigned int i = 0; i < contours2.size(); i++) {
 
+				// check it is a possible element by first checking is has enough points
+				if (minSize < contours2[i].size() && contours2[i].size() < maxSize) {
+					// approximate to a poligon
+					approxPolyDP(contours2[i], approxCurve, double(contours2[i].size()) * 0.05, true);
+					// check that the poligon has 4 points
+					if (approxCurve.size() == 4) {
+						// and is convex
+						if (isContourConvex(Mat(approxCurve))) {
+							float minDist = 1e10;
+							for (int j = 0; j < 4; j++) {
+								float d = std::sqrt((float)(approxCurve[j].x - approxCurve[(j + 1) % 4].x) * (approxCurve[j].x - approxCurve[(j + 1) % 4].x) +
+									(approxCurve[j].y - approxCurve[(j + 1) % 4].y) * (approxCurve[j].y - approxCurve[(j + 1) % 4].y));
+								if (d < minDist)
+									minDist = d;
+							}
+							// check that distance is not very small
+							if (minDist > 10) {
+								// add the points
+								MarkerCanditatesV[omp_get_thread_num()].push_back(MarkerCandidate());
+								MarkerCanditatesV[omp_get_thread_num()].back().idx = i;
+								for (int j = 0; j < 4; j++) {
+									MarkerCanditatesV[omp_get_thread_num()].back().push_back(Point2f(approxCurve[j].x, approxCurve[j].y));
+									MarkerCanditatesV[omp_get_thread_num()].back().contour = contours2[i];
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 
-        vector< Point > approxCurve;
-        /// for each contour, analyze if it is a paralelepiped likely to be the marker
-        for (unsigned int i = 0; i < contours2.size(); i++) {
+		for (size_t i = 0; i < MarkerCanditatesV.size(); i++)
+			for (size_t j = 0; j < MarkerCanditatesV[i].size(); j++) {
+				MarkerCanditates.push_back(MarkerCanditatesV[i][j]);
+			}
+	}
+	else {
+		//#pragma omp parallel for
+		for (int i = 0; i < thresImgv.size(); i++) {
+			cv::Mat thres2;
+			thresImgv[i].copyTo(thres2);
 
-            // check it is a possible element by first checking is has enough points
-            if (minSize < contours2[i].size() && contours2[i].size() < maxSize) {
-                // approximate to a poligon
-                approxPolyDP(contours2[i], approxCurve, double(contours2[i].size()) * 0.05, true);
-                // 				drawApproxCurve(copy,approxCurve,Scalar(0,0,255));
-                // check that the poligon has 4 points
-                if (approxCurve.size() == 4) {
-                    /*
-                                            drawContour ( input,contours2[i],Scalar ( 255,0,225 ) );
-                                            namedWindow ( "input" );
-                                            imshow ( "input",input );*/
-                    //  	 	waitKey(0);
-                    // and is convex
-                    if (isContourConvex(Mat(approxCurve))) {
-                        // 					      drawApproxCurve(input,approxCurve,Scalar(255,0,255));
-                        // 						//ensure that the   distace between consecutive points is large enough
-                        float minDist = 1e10;
-                        for (int j = 0; j < 4; j++) {
-                            float d = std::sqrt((float)(approxCurve[j].x - approxCurve[(j + 1) % 4].x) * (approxCurve[j].x - approxCurve[(j + 1) % 4].x) +
-                                                (approxCurve[j].y - approxCurve[(j + 1) % 4].y) * (approxCurve[j].y - approxCurve[(j + 1) % 4].y));
-                            // 		norm(Mat(approxCurve[i]),Mat(approxCurve[(i+1)%4]));
-                            if (d < minDist)
-                                minDist = d;
-                        }
-                        // check that distance is not very small
-                        if (minDist > 10) {
-                            // add the points
-                            // 	      cout<<"ADDED"<<endl;
-                            MarkerCanditatesV[omp_get_thread_num()].push_back(MarkerCandidate());
-                            MarkerCanditatesV[omp_get_thread_num()].back().idx = i;
-                            for (int j = 0; j < 4; j++) {
-                                MarkerCanditatesV[omp_get_thread_num()].back().push_back(Point2f(approxCurve[j].x, approxCurve[j].y));
-                                MarkerCanditatesV[omp_get_thread_num()].back().contour = contours2[i];
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    // join all candidates
-    vector< MarkerCandidate > MarkerCanditates;
+			MemStorage storage(cvCreateMemStorage());
+			CvMat _cimage = thres2;
+			CvSeq* _ccontours = 0;
+			cvFindContours(&_cimage, storage, &_ccontours, sizeof(CvContour), CV_RETR_LIST, CV_CHAIN_APPROX_NONE);
+			if (!_ccontours) {
+				return;
+			}
+			Seq<CvSeq*> all_contours(cvTreeToNodeSeq(_ccontours, sizeof(CvSeq), storage));
+			int k, total = (int)all_contours.size();
 
-    for (size_t i = 0; i < MarkerCanditatesV.size(); i++)
-        for (size_t j = 0; j < MarkerCanditatesV[i].size(); j++) {
-            MarkerCanditates.push_back(MarkerCanditatesV[i][j]);
-            //                 MarkerCanditates.back().draw ( input,cv::Scalar ( 0,0,255 ) );
-        }
+			SeqIterator<CvSeq*> it = all_contours.begin();
+			vector< Point > approxCurve;
+
+			CvSeq*  DstSeq;
+
+			for (k = 0; k < total; k++, ++it) {
+				CvSeq* c = *it;
+				if (minSize < c->total && c->total < maxSize) {
+					((CvContour*)c)->color = (int)k;
+
+					DstSeq = cvApproxPoly(c, c->header_size, c->storage, CV_POLY_APPROX_DP, double(c->total) * 0.05);
+
+					if (DstSeq->total == 4) {
+
+						Mat approxCurveMat(DstSeq->total, 1, CV_32SC2);
+						cvCvtSeqToArray(DstSeq, approxCurveMat.data);
+
+						if (isContourConvex(approxCurveMat)) {
+							float minDist = 1e10;
+							for (int j = 0; j < 4; j++) {
+								float x = (float)(approxCurveMat.at<int>(j, 0) - approxCurveMat.at<int>((j + 1) % 4, 0));
+								float y = (float)(approxCurveMat.at<int>(j, 1) - approxCurveMat.at<int>((j + 1) % 4, 1));
+								float d = std::sqrt(x * x + y * y);
+								// 		norm(Mat(approxCurve[i]),Mat(approxCurve[(i+1)%4]));
+								if (d < minDist)
+									minDist = d;
+							}
+							// check that distance is not very small
+							if (minDist > 10) {
+								// add the points
+								aruco::MarkerDetector::MarkerCandidate tempCandidate;
+								tempCandidate.idx = k;
+
+								Mat cii(1, (int)c->total, CV_32SC2);
+								CV_Assert(cii.isContinuous());
+								cvCvtSeqToArray(c, cii.data);
+
+								for (int j = 0; j < 4; j++) {
+									Point2f tempPoint(approxCurveMat.at<int>(j, 0), approxCurveMat.at<int>(j, 1));
+									tempCandidate.push_back(tempPoint);
+									cii.copyTo(tempCandidate.contour);
+								}
+								MarkerCanditates.push_back(tempCandidate);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 
     /// sort the points in anti-clockwise order
     valarray< bool > swapped(false, MarkerCanditates.size()); // used later
